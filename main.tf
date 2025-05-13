@@ -21,6 +21,10 @@ resource "azurerm_resource_group" "name" {
   name     = "github-rg"
   location = "East US"
 }
+resource "azurerm_resource_group" "name" {
+  name     = "feature-test-rg"
+  location = "East US"
+}
 resource "azurerm_virtual_network" "vnet" {
   name                = "github-vnet"
   location            = "East US"
