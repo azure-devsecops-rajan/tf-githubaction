@@ -21,7 +21,7 @@ resource "azurerm_resource_group" "name" {
   name     = "github-rg"
   location = "East US"
 }
-resource "azurerm_resource_group" "name" {
+resource "azurerm_resource_group" "tets" {
   name     = "feature-test-rg"
   location = "East US"
 }
