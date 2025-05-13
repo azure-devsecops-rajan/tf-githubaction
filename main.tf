@@ -1,16 +1,16 @@
 terraform {
-    required_providers {
-        azurerm = {
-            source  = "hashicorp/azurerm"
-            version = "4.26.0"
-        }
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "4.26.0"
     }
-    backend "azurerm" {
-        resource_group_name  = "rajan"
-        storage_account_name = "pipelinestorageaccoun4"
-        container_name       = "pipelinecontainer"
-        key                  = "git.tfstate"
-    }
+  }
+  backend "azurerm" {
+    resource_group_name  = "rajan"
+    storage_account_name = "pipelinestorageaccoun4"
+    container_name       = "pipelinecontainer"
+    key                  = "git.tfstate"
+  }
 }
 provider "azurerm" {
   features {}
@@ -18,6 +18,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "name" {
-  name = "github-rg"    
+  name     = "github-rg"
   location = "East US"
 }
