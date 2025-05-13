@@ -1,6 +1,6 @@
 rg = {
   rg1 = {
-    name     = "github-rg"
+    name     = "github-dev-rg"
     location = "eastus"
   }
 }
